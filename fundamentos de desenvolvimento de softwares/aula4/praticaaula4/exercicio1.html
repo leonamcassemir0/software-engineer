@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício1 (formulário)</title>
+</head>
+<body>
+    <h1>Pedido Pizza</h1>
+    <form action="teste.jsp" method="get">
+        <label for="fname">Nome:</label>
+        <input type="text" name="fname" id="fname">
+
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <br>
+        <label>Tamanho:</label>
+        <input type="radio" name="tam" id="tg" value="grande">
+        <label for="tg">Grande</label>
+        <input type="radio" name="tam" id="tm" value="medio">
+        <label for="tm">Médio</label>
+        <input type="radio" name="tam" id="tp" value="pequeno">
+        <label for="tp">Pequeno</label>
+
+        <br>
+        <label>Sabor:</label>
+        <select name="sabor">
+            <option value="calabra">Calabresa</option>
+            <option value="napolita">Napolitana</option>
+            <option value="marga">Marguerita</option>
+        </select>
+        <label for="">Adicionais:</label>
+        <input type="checkbox" name="ad" id="borda">
+        <label for="borda">Borda</label>
+        <input type="checkbox" name="ad" id="queijo">
+        <label for="queijo">Queijo</label>
+
+        <br>
+        <label for="date">Data entrega:</label>
+        <input type="date" name="date" id="date">
+
+        <br>
+        <label>Comentários:</label>
+        <br>
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>    
+</body>
+</html>
