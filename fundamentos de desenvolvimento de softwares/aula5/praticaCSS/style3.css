@@ -1,0 +1,15 @@
+ul{
+    list-style: upper-alpha;
+    font-size: 30px;
+    color:indigo;
+    width: fit-content;
+}
+ul li:nth-child(odd){
+    background-color: khaki;
+}
+ul li:nth-child(even){
+    background-color: lightgreen;
+}
+ul li:hover{
+    font-weight: bolder;
+}

@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+    height: 98vh;
+}
+
+.p{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.q1{
+    background-color: #2F4F4F;
+    position: static;
+}
+.q4{
+    background-color: #9932CC;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.q3{
+    background-color: #006200;
+    position: absolute;
+    bottom: 0;
+}
+.q2{
+    background-color: #D8143B;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
