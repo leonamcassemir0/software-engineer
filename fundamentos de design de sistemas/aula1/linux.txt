@@ -1,0 +1,6 @@
+LINUX
+
+LINUX é um sistema operacional de código aberto criado por Linus Torvalds em 1991.
+SOFTWARE LIVRE significa que qualquer pessoa pode ver, modificar e distribuir o código fonte.
+KERNEL LINUX é o núcleo do sistema operacional.
+	- Gerencia as tarefass básicas do computador, como gerenciamento de memória e arquivos.
