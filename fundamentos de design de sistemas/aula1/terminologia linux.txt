@@ -1,0 +1,17 @@
+TERMINOLOGIA LINUX
+
+BOOT é o processo de inicialização de um computador.
+FIRMWARE é um software básico armazenado na memória do computador que controla as funções básicas do hardware.
+	- Ex: BIOS ou UEFI.
+GRUB(Grand Unified Boot Loader) é o boot loader padrão para a maioria das distribuições Linux
+
+SISTEMAS DE ARQUIVOS são estruturas de dados que organizam e gerenciam arquivos em um dispositivo de armazenamento, como um disco rígido.
+EXT4 é o sistemas de arquivos padrão para a maioria das distribuições linux modernas.
+XFS é outro sistema de arquivos popular no Linux, especialmente para sistemas que trabalham com arquivos gigantescos.
+
+X WINDOW SYSTEM(X ou X11) é um sistema de gerenciamento de janelas paras sistemas Unix-like, como o Linux.
+
+TERMINAL(ou linha de comando) é um meio de interagir com o sistema operacional por meio de comandos digitados em uma interface de texto.
+
+SHELL é um interpretador de comandos que permite aos usuários interagir com o sistema operacional por meio da linha de comando.
+	- O Bash é o shell padrão na maioria das distribuições Linux.
