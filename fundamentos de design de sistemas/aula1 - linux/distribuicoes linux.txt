@@ -1,7 +1,0 @@
-DISTRIBUIÇÕES LINUX
-
-DISTRIBUIÇÃO LINUX é uma versão dos sistema operacional Linux que inclui um conjunto de ferramentas e programas adicionais.
-
-DEBIAN: Uma das principais características é o seu gerenciador de pacotes, o APT(Advanced Package Tool - .deb), que permite que os usuários instalem, atualizem e removam facilmente pacotes de software.
-UBUNTU é usado para dar privilégios de administrador ao usuário.
-MINT é uma versão baseada no Ubuntu que foi criada para fornecer uma experiência de usuário similar ao Windows.
