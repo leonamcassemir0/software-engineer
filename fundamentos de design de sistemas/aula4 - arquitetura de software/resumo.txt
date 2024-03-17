@@ -1,0 +1,16 @@
+ARQUITETURA DE SOFTWARE
+
+ARQUITETURA DE SOFTWARE define a estrutura fundamental para tecnologias, desempenho e escalabilidade dos sistemas.
+
+PADRÕES ARQUITETURAIS Orientam a visão alinhada aos negócios e direcionam as decisões de projeto de software.
+PROFISSIONAL DE ARQUITETURA deve ter conhecimento em diversas tecnologias e compreender os negócios da corporação.
+DOCUMENTAÇÃO DA ARQUITETURA de software é um componente crítico que serve para registrar e comunicar as decisões de design e estrutura de um sistema de software.
+	- Alguns pontos-chave: visão geral, estrutura, melhores práticas etc.
+
+A NORMA ISO/IEC/IEEE 42010:2011 estabelece um padrão para a descrição da arquitetura de sistemas e softwares, proporcionando um modelo conceitual que permite aos arquitetos de software descrever e comunicar efetivamente a arquitetura de um sistema.
+	- Visões da norma: lógica, desenvolvimento, processo, física.
+
+ARQUITETURA EM CAMADAS(LAYERED PATTERN) organiza um sistema em um conjunto de camadas, cada uma das quais fornece serviços para a camada acima dela.
+ARQUITETURA CLIENTE-SERVIDOR(CLIENT-SERVER PATTERN) é um modelo em que um servidor fornece serviços, e um ou mais clientes consomem esses serviços.
+ARQUITETURA MVC (MODEL-VIEW-CONTROLLER) divide uma aplicação em três partes interconectadas. Isso é feito para separar representações internas da informação do sistema das maneiras que a informação é apresentada e aceita do usuário.
+ARQUITETURA DE MICROSERVIÇOS é um estilo de arquitetura que estrutura uma aplicação como uma coleção de serviços
