@@ -1,0 +1,11 @@
+DESIGN GRÁFICO
+
+ARQUITETURA DE INFORMAÇÃO (AI) é a prática de decidir como organizar as partes de alguma coisa de modo a torná-la compreensível.
+	- Pilares fundamentais são a navegação, busca, organização e rotulação.
+
+WIREFRAMES estabelecem a base para a construção da interface de um site ou aplicativo.
+	- Não se importa com parte gráfica, cores e estilos.
+	- Serve como esqueleto da aplicação.
+
+SERVICE BLUEPRINTS têm como principal objetivo fornecer uma análise abrangente de como os processos internos de uma empresa influenciam a experiência do usuário final.
+MODELO ATÔMICO baseia-se em componentes menores e gerenciáveis que são combinados para formar estruturas mais complexas.
