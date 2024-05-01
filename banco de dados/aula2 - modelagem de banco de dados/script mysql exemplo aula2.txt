@@ -1,3 +1,5 @@
+create database delivery;
+use delivery;
 CREATE TABLE cidade (
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   estado_id INTEGER UNSIGNED NOT NULL,
