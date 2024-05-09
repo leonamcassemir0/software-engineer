@@ -62,3 +62,107 @@ select nome,
         else 'Outros'
     end as 'Gênero'
 from funcionario;
+
+select nome, nascimento from cliente
+union 
+select nome, nascimento from funcionario;
+
+select nome, nascimento, 'cliente' from cliente
+union all
+select nome, nascimento, 'funcionario' from funcionario
+order by 1;
+
+-- Distinct
+select nome from cliente order by nome;
+select distinct nome from cliente order by nome;
+
+-- Distinct com mais colunas
+select nome, email from cliente order by nome;
+select distinct nome, email from cliente order by nome;
+
+-- Inner join - equi-non
+select nome, nome, sigla from cidade 
+    inner join estado
+    on cidade.estadoId = estado.id;
+
+-- Usando where
+select nome, nome, sigla from cidade, estado
+    where cidade.estadoId = estado.id;
+
+-- Left join inclusive
+select nome, nome, sigla from cidade 
+    left join estado
+    on cidade.estadoId = estado.id;
+
+-- Left join exclusive
+select nome, nome, sigla from cidade 
+    left join estado
+    on cidade.estadoId = estado.id
+    where estado.id is null;
+
+-- Right join inclusive
+select nome, nome, sigla from cidade 
+    right join estado
+    on cidade.estadoId = estado.id;
+
+-- Right join exclusive
+select nome, nome, sigla from cidade 
+    right join estado
+    on cidade.estadoId = estado.id
+    where cidade.estadoId is null;
+
+-- Full join (o MySQL não suporta o full join)
+select nome, nome, sigla from cidade 
+    full join estado
+    on cidade.estadoId = estado.id;
+
+-- Gerando o full join
+select nome, nome, sigla from cidade 
+    left join estado
+    on cidade.estadoId = estado.id
+    union
+    select nome, nome, sigla from cidade 
+        right join estado
+        on cidade.estadoId = estado.id
+    where cidade.estadoId is null;
+
+-- Cross join
+select nome, pergunta from pergunta
+    cross join funcionario;
+
+-- Self join com inner join
+select funcionario.nome, gerente.nome as 'gerente' from funcionario 
+    inner join funcionario as gerente
+    on funcionario.gerente = gerente.matricula
+    order by funcionario.nome;
+
+-- Self join com left join
+select funcionario.nome, gerente.nome from funcionario 
+    left join funcionario as gerente
+    on funcionario.gerente = gerente.matricula
+    order by funcionario.nome;
+
+-- Join com várias tabelas
+select nome, nome, nome from funcionario
+    inner join cidade 
+    on funcionario.cidadeId = cidade.id
+    inner join estado
+    on cidade.estadoId = estado.id
+    order by nome;
+
+select nome, nome, sigla from cidade 
+    full join estado
+    on cidade.estadoId = estado.id
+    where cidade.estadoId is null
+    or estado.id is null;
+
+select nome, salario, salario * 1.10 from funcionario;
+
+select nome as 'Nome do funcionário', 
+    salario as 'Salário atual',
+    salario * 1.10 as 'Novo salário'
+    from funcionario;
+
+select nome as 'Nome do funcionário', nome as 'Nome da cidade' from funcionario f
+    inner join cidade c
+    on f.cidadeId = c.id;
