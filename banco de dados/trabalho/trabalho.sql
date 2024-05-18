@@ -147,8 +147,24 @@ insert into itemPedido (idPedido, idLivro, quantidade, valorItemPedido) values
      (13, 7, 1, 99.90);
 
 -- CONSULTAS
+
+-- 2.
 select count(idLivro) from livro;
+
+-- 3.
 select nome from cliente order by nome asc;
-select (editora.nome) as 'Nome(Editora)', (livro.titulo) as 'Nome(Livros)' from editora
+
+-- 4.
+select editora.nome, livro.titulo from editora
 join livro on editora.idEditora = livro.idEditora order by editora.nome desc;
--- falta os comandos 5 e 6
+
+-- 5.
+select editora.nome, avg(livro.preco) from editora
+join livro on editora.idEditora = livro.idEditora
+group by editora.nome;
+
+-- 6.
+select cliente.nome, sum(itemPedido.quantidade) from cliente
+join pedido on cliente.idCliente = pedido.idCliente
+join itemPedido on pedido.idPedido = itemPedido.idpedido 
+group by cliente.nome;
