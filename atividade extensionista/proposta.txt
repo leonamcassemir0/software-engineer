@@ -1,0 +1,13 @@
+PROPOSTA DE TRABALHO!
+
+Título: Conexão Solidária
+Sub-título: Conectados por um mundo melhor
+
+Objetivos:
+	- Criar uma aplicação que conecta usuários doadores à pessoas necessitadas.
+	- Cadastro do usuário.
+	- Cadastro dos produtos a serem doados.
+	- Link entre o produto e o usuário que necessita deste produto.
+	- Um chat integrado no próprio aplicativo ou redirecioná-lo para um app de mensagens(por exemplo whatsapp).
+	- Realizar doações entre estados.
+	- Criar um programa de doações monetárias para custear possíveis gastos com frete.

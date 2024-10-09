@@ -1,0 +1,53 @@
+Para criar a arquitetura de software orientada a objetos para a startup AUTO CENTER FERNANDES, a abordagem envolverá a definição de classes principais, seus atributos, métodos, e as relações entre elas. Abaixo está um exemplo básico de como essa arquitetura poderia ser estruturada:
+
+### Principais Classes:
+
+1. **Classe `Produto`**:
+   - **Atributos**: código, marca, quantidadeEmEstoque, valorUnitario.
+   - **Métodos**: cadastrarProduto(), atualizarEstoque(), consultarProduto().
+
+2. **Classe `Cliente`**:
+   - **Atributos**: nome, CPF, email, contato, endereco, historicoCompras.
+   - **Métodos**: cadastrarCliente(), atualizarDados(), consultarHistorico().
+
+3. **Classe `Fornecedor`**:
+   - **Atributos**: nome, CNPJ, contato, historicoFornecimento.
+   - **Métodos**: cadastrarFornecedor(), atualizarDados(), consultarHistoricoFornecimento().
+
+4. **Classe `NotaFiscal`**:
+   - **Atributos**: numeroNota, dataEmissao, listaProdutos, valorTotal.
+   - **Métodos**: emitirNota(), imprimirNota().
+
+5. **Classe `Funcionario`**:
+   - **Atributos**: nome, CPF, cargo, salario.
+   - **Métodos**: calcularSalario(), atualizarDados().
+
+6. **Classe `Servico`**:
+   - **Atributos**: tipoServico, dataAgendada, cliente, veiculo.
+   - **Métodos**: agendarServico(), consultarServico().
+
+7. **Classe `Login`**:
+   - **Atributos**: usuario, senha, tipoUsuario (administrativo ou funcionario).
+   - **Métodos**: autenticar(), definirPermissoes().
+
+8. **Classe `Financeiro`**:
+   - **Atributos**: gastosMensaisFuncionarios, gastosMensaisBasicos, lucrosMensais, lucrosAnuais.
+   - **Métodos**: calcularLucro(), registrarGastos().
+
+### Relacionamentos:
+- **`Cliente`** pode ter múltiplas **`NotaFiscal`** (relação 1:N).
+- **`Fornecedor`** fornece múltiplos **`Produto`** (relação 1:N).
+- **`Funcionario`** pode realizar múltiplos **`Servico`** (relação 1:N).
+- **`Produto`** pode estar presente em múltiplas **`NotaFiscal`** (relação N:N).
+
+### Diagrama de Classes:
+Você pode criar o diagrama de classes utilizando ferramentas como Lucidchart ou Miro. Infelizmente, eu não posso diretamente criar gráficos ou diagramas, mas você pode seguir estas instruções:
+
+1. **Acesse uma ferramenta online como Lucidchart, Miro ou outra de sua preferência.**
+2. **Crie um novo projeto ou documento.**
+3. **Adicione caixas para cada classe listada acima.**
+4. **Insira os atributos e métodos de cada classe dentro das caixas.**
+5. **Desenhe linhas entre as caixas para representar os relacionamentos, utilizando setas ou outros conectores apropriados.**
+6. **Adicione seu nome e RU no canto do diagrama para identificação.**
+
+Depois de criar o diagrama, você pode compartilhar o link ou fazer o upload da imagem se precisar de revisão ou ajuda adicional.

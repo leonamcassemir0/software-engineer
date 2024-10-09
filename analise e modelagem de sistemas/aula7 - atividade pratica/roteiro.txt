@@ -1,0 +1,14 @@
+-> Administração financeira voltada para agropecuária.
+	- Trabalham com várias empresas do ramo.
+
+-> A empresa é toda manual, não há nada automatizado.
+
+-> Comunicação com clientes via e-mail ou cara a cara.
+
+-> Urgência para o comando de voz.
+-> Depois um software de gestão, comunicação com clientes, anúncios.
+
+-> Comando de voz:
+	- Acessibilidade
+	- Economia de energia
+	- Controle de acesso
