@@ -1,7 +1,7 @@
-package com.example.demo.repository;
+package com.tarefaTrabalho.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.demo.model.Tarefa;
+import com.tarefaTrabalho.demo.model.Tarefa;
 
 public interface TarefaRepository extends JpaRepository<Tarefa, Long> {
 }
