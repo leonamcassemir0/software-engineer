@@ -42,9 +42,9 @@ public class TarefaController {
     public ResponseEntity<Tarefa> atualizar(@PathVariable Long id, @RequestBody Tarefa tarefa) {
         return repository.findById(id)
                 .map(record -> {
-                    record.setId(tarefa.getNome());
+                    record.setNome(tarefa.getNome());
+                    record.setResponsavel(tarefa.getResponsavel());
                     record.setDataEntrega(tarefa.getDataEntrega());
-                    record.setId(tarefa.getResponsavel());
                     Tarefa atualizado = repository.save(record);
                     return ResponseEntity.ok().body(atualizado);
                 }).orElse(ResponseEntity.notFound().build());

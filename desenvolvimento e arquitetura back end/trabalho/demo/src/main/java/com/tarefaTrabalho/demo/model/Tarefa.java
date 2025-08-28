@@ -1,45 +1,58 @@
 package com.tarefaTrabalho.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 public class Tarefa {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // auto incremento no banco
-    private Long id;
-    private Long nome;
-    private Long Responsavel;
-    private Object DataEntrega;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;   // chave primária obrigatória
 
-    // construtores
+    private String nome;
+
+    private String responsavel;
+
+    @Column(name = "data_entrega")
+    private LocalDate dataEntrega;
+
+    // ✅ Construtor vazio (necessário para o Hibernate)
     public Tarefa() {}
 
-    // getters e setters
+    // ✅ Construtor com argumentos
+    public Tarefa(String nome, String responsavel, LocalDate dataEntrega) {
+        this.nome = nome;
+        this.responsavel = responsavel;
+        this.dataEntrega = dataEntrega;
+    }
+
+    // Getters e Setters
     public Long getId() {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public Object getDataEntrega() {
-        return DataEntrega;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setDataEntrega(Object dataEntrega) {
+    public String getResponsavel() {
+        return responsavel;
     }
 
-    public Long getResponsavel() {
-        return Responsavel;
+    public void setResponsavel(String responsavel) {
+        this.responsavel = responsavel;
+    }
+
+    public LocalDate getDataEntrega() {
+        return dataEntrega;
+    }
+
+    public void setDataEntrega(LocalDate dataEntrega) {
+        this.dataEntrega = dataEntrega;
     }
 }
-
